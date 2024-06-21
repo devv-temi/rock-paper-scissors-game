@@ -21,8 +21,6 @@ function convertToWord(letter) {
 }
 
 function win(userChoice, computerChoice) {
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallcompWord = "comp".fontsize(3).sub();
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
@@ -30,8 +28,6 @@ function win(userChoice, computerChoice) {
 } 
 
 function lose(userChoice, computerChoice) {
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallcompWord = "comp".fontsize(3).sub();
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
@@ -40,8 +36,6 @@ function lose(userChoice, computerChoice) {
 
 function draw(userChoice, computerChoice) {
     // userScore++;
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallcompWord = "comp".fontsize(3).sub();
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
     result_h1.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. It is a tie`;
@@ -79,5 +73,16 @@ function mainGame() {
         game("s")
     })
 }
+
+
+//     let sum = 0;
+//     for (let i = 0; i <= 10000; i++) {
+//         if (i % 2 === 0) {
+//             sum++;
+//         }
+//     }
+
+// console.log(sum)
+
 
 mainGame()
