@@ -8,7 +8,7 @@ function quadraticEquation(a, b, c) {
     if (d > 0) {
         console.log((-b + e) / (2 * a) + " and " + (-b -e) / (2 * a))
     } else if (d == 0) {
-        console.log((-b + e) / (2 * a) + " and " + (-b -e) / (2 * a))
+        console.log(-b / (2 * a) + " and " + -b / (2 * a))
     } else {
         console.log((-b + e) / (2 * a) + " and " + (-b -e) / (2 * a))
     }
